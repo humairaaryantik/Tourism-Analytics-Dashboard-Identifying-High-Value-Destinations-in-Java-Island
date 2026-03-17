@@ -7,19 +7,21 @@
 3. [Tools](#tools)
 4. [Masalah Bisnis](#masalah-bisnis)
 5. [Informasi Dataset](#informasi-dataset)
+6. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)
+7. [Dashboard](#dashboard)
+8. [Key Insights](#key-insights)
+9. [Kesimpulan](#kesimpulan)
+10. [Author](#author)
+    
 ## **Deskripsi Project**
 
 Sektor pariwisata merupakan salah satu pendorong utama ekonomi Indonesia. Namun, pengambilan keputusan seringkali masih berbasis data yang tersebar dan kurang terstruktur.
 
 Proyek ini bertujuan untuk mengolah data pariwisata menjadi dashboard interaktif berbasis Power BI guna mengidentifikasi tren wisata, performa destinasi, serta peluang strategis di berbagai kota di Pulau Jawa.
 
-<div align="center">
-
-### Data Analysis Workflow
+**Data Analysis Workflow**
 
 <mark> Data Collection → Data Cleaning → Data Modeling (Relational Database) → Data Analysis → Data Visualization
-
-</div>
 
 ## **Tujuan Project**
 
@@ -69,7 +71,36 @@ Melakukan proses pembersihan dan transformasi data menggunakan Python, termasuk 
 
 Selanjutnya, data diintegrasikan menggunakan MySQL dengan teknik SQL JOIN, filtering, dan aggregation untuk membangun analytical dataset yang siap digunakan dalam proses analisis dan visualisasi.
 
-## **Exploratory Data Analysis (EDA)**
+```
+CREATE DATABASE tourism_db;
+USE tourism_db;
+SELECT * FROM package_tourism;
+SELECT * FROM tourism_rating;
+SELECT * FROM tourism_with_id;
+SELECT * FROM user;
+
+-- city, category, rating, place_name, longitude, latitude, jumlah kunjungan
+SELECT
+    ti.Place_Id,
+    ti.City,
+    ti.Place_Name,
+    ti.Category,
+    ti.Rating,
+    ti.Lat,
+    COUNT(tr.Place_Ratings) AS "Jumlah Kunjungan"
+FROM tourism_with_id_cleaned ti
+JOIN tourism_rating tr
+ON ti.Place_Id = tr.Place_Id
+GROUP BY 
+    ti.Place_Id,
+	 ti.City,
+    ti.Place_Name,
+	 ti.Category,
+    ti.Rating,
+    ti.Lat;
+```
+
+## **Exploratory Data Analysis**
 
 Pada tahap ini dilakukan eksplorasi data untuk memahami pola dasar dalam dataset, diantaranya:
 
@@ -120,11 +151,11 @@ Rata-rata rating tempat wisata di lima kota berada pada kisaran 3.01 – 3.10, m
 
 Berdasarkan jumlah kunjungan, Wisata Kuliner Pecenongan menjadi destinasi paling populer, diikuti oleh Wisata Lereng Kelir, dan Kraton Jogja. Hal ini menunjukkan bahwa wisata kuliner, budaya, dan alam menjadi daya tarik utama bagi wisatawan.
 
-**Business Insight Example**
+## **Kesimpulan**
 
-1. Kota dengan jumlah destinasi tinggi seperti Yogyakarta dan Bandung berpotensi menjadi fokus utama pengembangan pariwisata.
-2. Kategori Taman Hiburan dan Budaya bisa menjadi fokus strategi promosi wisata.
-3. Destinasi dengan jumlah kunjungan tinggi dapat dijadikan benchmark untuk pengembangan destinasi lain.
+1. Konsentrasi destinasi wisata di kota seperti Yogyakarta dan Bandung menunjukkan potensi sebagai hub pariwisata yang layak diprioritaskan dalam pengembangan.
+2. Dominasi kategori hiburan dan budaya mengindikasikan preferensi wisatawan yang dapat dimanfaatkan untuk strategi promosi yang lebih terarah.
+3. Destinasi dengan performa kunjungan tinggi dapat digunakan sebagai benchmark strategis untuk meningkatkan daya saing destinasi lainnya.
 
 ### AUTHOR
 ---
