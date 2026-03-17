@@ -1,14 +1,17 @@
-</p><h1 align="center" = >Analisis Tren Destinasi Wisata di Pulau Jawa Menggunakan Microsoft Power BI </h1>
+</p><h1 align="center" = >Tourism Analytics Dashboard: Identifikasi Destinasi Unggulan di Pulau Jawa </h1>
 
-<p align="center">
-  <img src="https://github.com/humairaaryantik/Exploring-Tourism-Trends-on-Java-Island-Using-Power-BI/blob/a8e18d0cae708f530bf1fc9f0541b74287774afc/Tourism%20Dashboard.jpg" width="800"/>
-  <br>
-  <em> Tourism Dashboard on Java Island</em>
-</p>
+## Table of Contents
 
-Project ini bertujuan untuk menganalisis tren destinasi wisata di beberapa kota di Pulau Jawa dengan memanfaatkan visualisasi data interaktif menggunakan Microsoft Power BI. Analisis ini dilakukan untuk memahami distribusi destinasi wisata, kategori wisata yang paling populer, serta destinasi dengan tingkat rating tertinggi.
+1. [Deskripsi Project](#deskripsi-project)
+2. [Tujuan Project](#tujuan-project)
+3. [Tools](#tools)
+4. [Masalah Bisnis](#masalah-bisnis)
+5. [Informasi Dataset](#informasi-dataset)
+## **Deskripsi Project**
 
-Dashboard yang dihasilkan memungkinkan pengguna untuk mengeksplorasi data pariwisata secara interaktif berdasarkan kota dan kategori wisata sehingga dapat memberikan gambaran yang lebih jelas mengenai pola distribusi wisata di Pulau Jawa.
+Sektor pariwisata merupakan salah satu pendorong utama ekonomi Indonesia. Namun, pengambilan keputusan seringkali masih berbasis data yang tersebar dan kurang terstruktur.
+
+Proyek ini bertujuan untuk mengolah data pariwisata menjadi dashboard interaktif berbasis Power BI guna mengidentifikasi tren wisata, performa destinasi, serta peluang strategis di berbagai kota di Pulau Jawa.
 
 <div align="center">
 
@@ -18,16 +21,23 @@ Dashboard yang dihasilkan memungkinkan pengguna untuk mengeksplorasi data pariwi
 
 </div>
 
+## **Tujuan Project**
 
-## **Tools & Technologies**
+Tujuan utama dari project ini adalah:
+- Menganalisis distribusi tempat wisata di beberapa kota di Pulau Jawa
+- Mengidentifikasi kategori wisata yang paling dominan
+- Menemukan destinasi wisata dengan rating tertinggi
+- Membuat dashboard interaktif untuk mempermudah eksplorasi data pariwisata
 
-Tools yang digunakan dalam project ini:
-1. Dataset publik dari Kaggle
-2. Python - Data cleaning
-3. Microsoft Power BI – Data Visualization & Dashboard
+## **Tools**
+
+1. Kaggle Dataset → Sumber data publik untuk analisis
+2. Python → Data cleaning & preprocessing
+3. MySQL → Data integration & pembuatan analytical dataset menggunakan SQL (JOIN, filtering, aggregation)
+4. Microsoft Power BI → Data visualization dan pembuatan dashboard interaktif
 
 
-## **Business Problem**
+## **Masalah Bisnis**
 
 Sektor pariwisata membutuhkan pemahaman yang baik mengenai distribusi destinasi wisata dan preferensi wisatawan di berbagai wilayah. Tanpa analisis data yang tepat, akan sulit untuk:
 - Mengidentifikasi kota dengan jumlah destinasi wisata terbanyak
@@ -37,15 +47,7 @@ Sektor pariwisata membutuhkan pemahaman yang baik mengenai distribusi destinasi 
 
 Analisis data diperlukan untuk memberikan insight yang dapat membantu pengambilan keputusan berbasis data dalam pengembangan sektor pariwisata.
 
-## **Project Objectives**
-
-Tujuan utama dari project ini adalah:
-- Menganalisis distribusi tempat wisata di beberapa kota di Pulau Jawa
-- Mengidentifikasi kategori wisata yang paling dominan
-- Menemukan destinasi wisata dengan rating tertinggi
-- Membuat dashboard interaktif untuk mempermudah eksplorasi data pariwisata
-
-## **Dataset Information**
+## **Informasi Dataset**
 
 Dataset yang digunakan dalam project ini merupakan dataset publik yang diperoleh dari platform data science **Kaggle**, yang dapat diakses melalui tautan berikut:
 
@@ -61,6 +63,12 @@ Dataset ini terdiri dari 4 tabel utama yang digunakan untuk menganalisis tren de
 
 Dataset ini kemudian digunakan untuk melakukan proses data cleaning, data modeling, serta visualisasi data untuk mengidentifikasi tren destinasi wisata di beberapa kota di Pulau Jawa.
 
+## **Data Cleaning & Building Dataset**
+
+Melakukan proses pembersihan dan transformasi data menggunakan Python, termasuk menangani missing values, serta standarisasi format data.
+
+Selanjutnya, data diintegrasikan menggunakan MySQL dengan teknik SQL JOIN, filtering, dan aggregation untuk membangun analytical dataset yang siap digunakan dalam proses analisis dan visualisasi.
+
 ## **Exploratory Data Analysis (EDA)**
 
 Pada tahap ini dilakukan eksplorasi data untuk memahami pola dasar dalam dataset, diantaranya:
@@ -75,6 +83,12 @@ Hasil dari eksplorasi ini digunakan sebagai dasar dalam pembuatan dashboard visu
 ## **Dashboard**
 
 Dashboard ini memungkinkan pengguna untuk mengeksplorasi tren pariwisata berdasarkan kota, kategori wisata, serta popularitas destinasi.
+
+<p align="center">
+  <img src="https://github.com/humairaaryantik/Exploring-Tourism-Trends-on-Java-Island-Using-Power-BI/blob/a8e18d0cae708f530bf1fc9f0541b74287774afc/Tourism%20Dashboard.jpg" width="800"/>
+  <br>
+  <em> Tourism Dashboard on Java Island</em>
+</p>
 
 Dashboard menampilkan beberapa komponen utama, antara lain:
 - Jumlah keseluruhan tempat wisata
