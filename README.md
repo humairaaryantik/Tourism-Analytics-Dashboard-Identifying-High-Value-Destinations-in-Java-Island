@@ -23,7 +23,8 @@ Dashboard yang dihasilkan memungkinkan pengguna untuk mengeksplorasi data pariwi
 
 Tools yang digunakan dalam project ini:
 1. Dataset publik dari Kaggle
-2. Microsoft Power BI – Data Visualization & Dashboard
+2. Python - Data cleaning
+3. Microsoft Power BI – Data Visualization & Dashboard
 
 
 ## **Business Problem**
