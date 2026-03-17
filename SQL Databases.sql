@@ -1,6 +1,3 @@
-/* cara mengimport file/databases dalam csv ke my SQL 
-CREATE DATABASE (nama_databases) > USE (nama_databases) > klik kanan di schema (nama_databases) > table data import wizard > masukkan file (wajib csv) satu persatu */
-
 CREATE DATABASE tourism_db;
 USE tourism_db;
 SELECT * FROM package_tourism;
