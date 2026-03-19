@@ -7,11 +7,12 @@
 3. [Tools](#tools)
 4. [Masalah Bisnis](#masalah-bisnis)
 5. [Informasi Dataset](#informasi-dataset)
-6. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)
-7. [Dashboard](#dashboard)
-8. [Key Insights](#key-insights)
-9. [Kesimpulan](#kesimpulan)
-10. [Author](#author)
+6. [Data Cleaning & Integration](#data-cleaning-&-integration)
+7. [Exploratory Data Analysis (EDA)](#exploratory-data-analysis)
+8. [Dashboard](#dashboard)
+9. [Key Insights](#key-insights)
+10. [Kesimpulan](#kesimpulan)
+11. [Author](#author)
     
 ## **Deskripsi Project**
 
@@ -65,7 +66,7 @@ Dataset ini terdiri dari 4 tabel utama yang digunakan untuk menganalisis tren de
 
 Dataset ini kemudian digunakan untuk melakukan proses data cleaning, data modeling, serta visualisasi data untuk mengidentifikasi tren destinasi wisata di beberapa kota di Pulau Jawa.
 
-## **Data Cleaning & Building Dataset**
+## **Data Cleaning & Integration**
 
 Melakukan proses pembersihan dan transformasi data menggunakan Python, termasuk menangani missing values, serta standarisasi format data.
 
